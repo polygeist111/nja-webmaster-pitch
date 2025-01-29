@@ -83,6 +83,9 @@ footer {
     padding-bottom: 1em;
     padding-left: .5em;
     padding-right: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
     
 .footerDetails {
@@ -90,7 +93,6 @@ footer {
     flex-direction: column;
     align-items: center;
     align-self: center;
-    transform: translateY(+50%);
 }
 
 p {
@@ -158,6 +160,29 @@ li {
 
     p {
         text-align: left;
+    }
+
+    #wrapper {
+        display: grid;
+        grid-template-columns: 10vw 80vw 10vw;
+        grid-template-rows: 5vh 5vh max-content 15vh;
+    }
+
+    /*reduce fonts*/
+    strong {
+        font-size: 14pt;
+    }
+
+    li {
+        font-size: 12pt;
+    }
+
+    .textSectionHeader h3 {
+        font-size: 23pt;
+    }
+
+    .introBlockText {
+        font-size: 12pt;
     }
 }
     
